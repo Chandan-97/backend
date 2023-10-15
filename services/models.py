@@ -58,3 +58,6 @@ class CaService(models.Model):
 
     def __str__(self):
         return self.ca_id + " -- " + self.title
+
+    class Meta:
+        ordering = ['-id']
